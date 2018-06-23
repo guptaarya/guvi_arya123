@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int i,n,x;
+	printf("enter the value of n");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		if(n%i==0)
+		{
+			x=n/i;;
+			if(x%2==1)
+			{
+				printf("%d",i);
+				break;
+			}
+		}
+	}
+	return 0;
+}
